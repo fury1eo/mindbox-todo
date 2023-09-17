@@ -1,0 +1,15 @@
+.clear_btn {
+    width: 30%;
+    text-align: right;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media(max-width: 425px) {
+    .clear_btn {
+        width: 25%;
+    }
+}

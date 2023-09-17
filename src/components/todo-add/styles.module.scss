@@ -1,0 +1,67 @@
+.add {
+    border-bottom: 2px solid #ccc;
+    background-color: #fff;
+    align-items: center;
+    font-size: 24px;
+    display: flex;
+    padding: 0 30px;
+    gap: 20px;
+
+    &_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+
+        &:hover {
+            transform: translateY(5px);
+        }
+    }
+
+    & > input {
+        outline: none;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 24px;
+        font-weight: 300;
+        border: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .add {
+        font-size: 16px;
+        padding: 0 20px;
+        gap: 15px;
+
+        &_btn {
+            width: 20px;
+            height: 20px;
+        }
+
+        & > input {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .add {
+        font-size: 14px;
+        padding: 0 10px;
+        gap: 10px;
+
+        &_btn {
+            width: 15px;
+            height: 15px;
+        }
+
+        & > input {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+    }
+}
